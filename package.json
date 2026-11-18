@@ -1,0 +1,24 @@
+{
+  "name": "wallpaper-engine-mcp",
+  "version": "4.12.0",
+  "description": "MCP server for Wallpaper Engine: create, edit, preview and control scene and web wallpapers from an AI chat",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "check": "npm run build && node test/selfcheck.js && node test/smoke.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "sharp": "^0.35.5",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "typescript": "^5.8.3"
+  }
+}
